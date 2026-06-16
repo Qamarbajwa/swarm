@@ -1,0 +1,30 @@
+{
+  "name": "ai-agent-company-swarm",
+  "version": "1.0.0",
+  "description": "Complete AI Agent Company Swarm for SaaS marketing platform",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "swarm:phase0": "ts-node src/index.ts --phase=0",
+    "swarm:phase1": "ts-node src/index.ts --phase=1",
+    "swarm:full": "ts-node src/index.ts --phase=all",
+    "swarm:status": "ts-node src/index.ts --status",
+    "swarm:list": "ts-node src/index.ts --list-agents",
+    "swarm:agent": "ts-node src/index.ts --agent"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.104.2",
+    "dotenv": "^16.4.5",
+    "openai": "^4.52.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/uuid": "^9.0.8",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
