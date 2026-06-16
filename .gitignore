@@ -12,6 +12,9 @@ dist/
 # Swarm state
 swarm-state.json
 
+# Cline decision protocol (auto-generated)
+cline-decisions/
+
 # OS files
 .DS_Store
 Thumbs.db
