@@ -13,12 +13,7 @@
     "swarm:full": "ts-node src/index.ts --phase=all",
     "swarm:status": "ts-node src/index.ts --status",
     "swarm:list": "ts-node src/index.ts --list-agents",
-    "swarm:agent": "ts-node src/index.ts --agent",
-    "cline:status": "ts-node src/cli/cline.ts status",
-    "cline:agents": "ts-node src/cli/cline.ts agents",
-    "cline:phase": "ts-node src/cli/cline.ts phase",
-    "cline:decision": "ts-node src/cli/cline.ts decision",
-    "cline:agent": "ts-node src/cli/cline.ts agent"
+    "swarm:agent": "ts-node src/index.ts --agent"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.104.2",
